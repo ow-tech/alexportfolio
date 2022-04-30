@@ -8,20 +8,26 @@ function sendEmail(){
     let body = document.getElementById('contact_message').value;
     let inputs = document.querySelectorAll('input')
     let textarea = document.querySelector('textarea')
+    // Swal.fire(
+    //     'Good job!',
+    //     'You clicked the button!',
+    //     'success'
+    //   )
     // if ((email ==="") && (body ==="")){
+        // console.log(email, name, body)
         
     //     swal("Alex Advices", "You need to fill your Email and Message fields and Send Again.", "error");
     // }
     // else{
-        Email.send({
+        // Email.send({
             
-            SecureToken : "5abb9918-3ad8-41b9-88b5-79d1e526d69e",
-            To : 'alexbarasa0723@gmail.com',
-            From : "alexmulwabarasa@gmail.com",
-            Subject : "Potential Client's/Partner's Name : "+ name  +" email : "+ email,
-            Body : body,
-            })
-            alert('am done')
+        //     SecureToken : "fb7d7c70-2d88-4db8-915e-585379cbf799",
+        //     To : 'alexbarasa0723@gmail.com',
+        //     From : "alexmulwabarasa@gmail.com",
+        //     Subject : "portfolio email from. Name : "+ name  +" email : "+ email,
+        //     Body : body,
+        //     })
+        //     alert('am done')
     // }
 };
 // const inputs = document.querySelectorAll(".input");
