@@ -219,7 +219,7 @@
 };
 $(document).ready(function () {
     $('a img').hover(function () {
-		alert('hello');
+		// alert('hello');
         $(this).stop().animate({
             opacity: .4
         }, 200);
