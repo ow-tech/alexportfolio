@@ -105,7 +105,7 @@ Copyright <script>document.write(new Date().getFullYear());</script>
 					   					<div class="desc">
 						   					<h1 >Hi! <br>I'm Alex</h1>
 						   					<h2 >Experienced Frontend and equipped Full Stack web Developer </h2>
-												<p><a class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
+												<p><a class="btn btn-primary btn-learn" id="downloadButton">Download CV <i class="icon-download4"></i></a></p>
 											</div>
 					   				</div>
 					   			</div>
@@ -494,7 +494,7 @@ Copyright <script>document.write(new Date().getFullYear());</script>
 					<div class="row">
 						<div class="col-md-12">
 				         <div class="timeline-centered">
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+							 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 					            <div class="timeline-entry-inner">
 
 					               <div class="timeline-icon color-1">
@@ -502,8 +502,27 @@ Copyright <script>document.write(new Date().getFullYear());</script>
 					               </div>
 
 					               <div class="timeline-label">
+					                  <h2><a href="www.photomart.co.uk">Full Stack Web Developer at RDXB Valcom Properties</a> <span>2022-To Date</span></h2>
+					                  <p>
+										As a Fullstack Developer at Valcom Properties Dubai, my  primary duties and responsibilities revolve around designing and developing robust and scalable web applications that cater to the company's real estate business needs. I am responsible for collaborating with cross-functional teams, including product managers, designers, and other developers, to gather requirements and translate them into functional features. My role involves working on both the front-end and back-end aspects of the applications, using technologies like React, Java, Python, and associated frameworks. Tasked with implementing and maintaining database structures, APIs, and integrating third-party services. Additionally, playing a crucial role in optimizing the application's performance and ensuring its security and reliability. Staying updated with the latest industry trends and best practices is essential to deliver cutting-edge solutions that enhance the user experience and meet Valcom Properties' business objectives.
+									  </p>
+					               </div>
+					            </div>
+					         </article>
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-0">
+					                  <i class="icon-pen2"></i>
+					               </div>
+
+					               <div class="timeline-label">
 					                  <h2><a href="www.photomart.co.uk">Front End Dev, SEO and Google Ads Specialist at Photomart</a> <span>2022-2022</span></h2>
-					                  <p>As an SEO and Google Ads specialist, my duties include analyzing and optimizing website content and structure to improve search engine rankings and visibility. This includes conducting keyword research, implementing meta tags and alt text, and optimizing page titles and descriptions. Additionally, I am responsible for monitoring and analyzing website traffic and search engine performance, and making adjustments as necessary. I also create and manage Google Ads campaigns, including setting up and optimizing ad groups, targeting specific audiences and keywords, and analyzing campaign performance to improve ROI. Other duties include monitoring industry trends and keeping up-to-date with the latest SEO and Google Ads best practices and algorithms. I work closely with other members of the marketing team to develop and execute a comprehensive digital marketing strategy that includes SEO and PPC.</p>
+					                  <p>As an accomplished SEO and Google Ads specialist, my core focus is on driving remarkable results through strategic optimization techniques. I excel in meticulously analyzing and enhancing website content and structure, propelling it to higher search engine rankings and improved visibility. My expertise includes conducting thorough keyword research, implementing impactful meta tags and alt text, and crafting compelling page titles and descriptions.
+
+In addition to these vital tasks, I diligently monitor and assess website traffic and search engine performance, proactively adjusting strategies to ensure optimal outcomes. My proficiency extends to creating and managing highly effective Google Ads campaigns, where I expertly set up and optimize ad groups, target specific audiences and keywords, and consistently analyze campaign performance to maximize return on investment (ROI).
+
+Staying ahead of the curve is my commitment, as I continuously track industry trends and stay up-to-date with the latest SEO and Google Ads best practices and algorithms. My collaborative spirit shines through as I work closely with the marketing team to develop and execute comprehensive digital marketing strategies that encompass SEO and PPC, ultimately driving exceptional business growth. My track record of success and passion for elevating online presence make me an ideal candidate to capture employers' attention and achieve remarkable results for your organization.</p>
 					               </div>
 					            </div>
 					         </article>
@@ -825,6 +844,28 @@ Copyright <script>document.write(new Date().getFullYear());</script>
 	
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+	<script>
+		document.getElementById('downloadButton').addEventListener('click', function() {
+  // File path for the document in the root of your application folder
+  const fileUrl = '/Alex Mulwa Barasa IT Specialists.pdf';
+
+  // Replace 'Alex_Mulwa_Barasa_IT_Specialists.pdf' with the desired file name
+  const fileName = 'Alex_Mulwa_Barasa_IT_Specialists.pdf';
+
+  // Create a temporary anchor element
+  const downloadLink = document.createElement('a');
+  downloadLink.href = fileUrl;
+  downloadLink.download = fileName;
+
+  // Append the anchor to the document and trigger the download
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+
+  // Remove the anchor from the document
+  document.body.removeChild(downloadLink);
+});
+
+	</script>
 
 	</body>
 </html>
